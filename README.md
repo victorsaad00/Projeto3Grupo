@@ -6,13 +6,14 @@
 [![Git badge](https://badgen.net/badge/icon/git?icon=git&label)](https://git-scm.com/downloads)
 [![Github badge](https://badgen.net/badge/icon/github?icon=github&label)](https://github.com/)
 
-**Movie recomendation app**
+
+                                                                 ### Movie recomendation app
 
 
-
-### Welcome to our Movie recomendation made with Flutter and Django API 
+ **Welcome to our Movie recomendation made with Flutter and Django API** 
 
 - First you need to install the following:
+
   -[Python](https://www.python.org/downloads/)  
   - [Django](https://www.djangoproject.com/download/)
   - [Flutter](https://flutter.dev/)
