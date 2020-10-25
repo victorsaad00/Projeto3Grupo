@@ -1,7 +1,8 @@
 # PROJETO 3 APPLICATION 
 [![Flutter badge](https://badgen.net/pub/flutter-platform/xml)](https://flutter.dev/)
 [![Github badge](https://badgen.net/badge/icon/github?icon=github&label)](https://github.com/)
-[![forthebadge](https://forthebadge.com/images/badges/60-percent-of-the-time-works-every-time.svg)](https://forthebadge.com)
+[![Git badge](https://badgen.net/badge/icon/git?icon=git&label)](https://git-scm.com/downloads)
+[![Vs code badge](https://badgen.net/badge/icon/visualstudio?icon=visualstudio&label)](https://code.visualstudio.com/download)
 
 
 A new Flutter application.
