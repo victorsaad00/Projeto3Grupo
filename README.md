@@ -1,5 +1,6 @@
 # PROJETO 3 APPLICATION 
-[![Flutter badge](https://badgen.net/pub/flutter-platform/xml)](https://flutter.dev/) [![Github badge](https://badgen.net/badge/icon/github?icon=github&label)](https://github.com/)
+[![Flutter badge](https://badgen.net/pub/flutter-platform/xml)](https://flutter.dev/)
+[![Github badge](https://badgen.net/badge/icon/github?icon=github&label)](https://github.com/)
 
 
 A new Flutter application.
