@@ -19,6 +19,8 @@ class Recommender:
         self.set_directors()
         self.set_genres()
         self.set_description()
+        self.set_language()
+        self.set_writer()
         self.set_soup()
 
         self.build_count_matrix()
@@ -93,6 +95,16 @@ class Recommender:
     def set_description(self):
         self.df['description_s'] = self.df['description'].fillna('')
         self.df['description_s'] = self.df['description_s'].str.lower()
+
+    def set_language(self):
+        self.df['language'] = self.df['language'].fillna('')
+        self.df['language'] = self.df['language'].str.strip()
+        self.df['language'] = self.df['language'].str.split(',')
+
+    def set_writer(self):
+        self.df['writer'] = self.df['writer'].fillna('')
+        self.df['writer'] = self.df['writer'].str.strip()
+        self.df['writer'] = self.df['writer'].str.split(',')
 
     def set_soup(self):
         self.df['soup'] = self.df.apply(self.create_soup, axis=1)

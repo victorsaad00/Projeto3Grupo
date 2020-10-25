@@ -7,8 +7,10 @@ class MovieSerializer(serializers.ModelSerializer):
         data['actors'] = [field.strip(' ') for field in data.get('actors').split(',')] if data.get('actors') != None else ''
         data['genre'] = [field.strip(' ') for field in data.get('genre').split(',')] if data.get('genre') != None else ''
         data['language'] = [field.strip(' ') for field in data.get('language').split(',')] if data.get('language') != None else ''
-        data['writer'] = [field.strip(' ') for field in data.get('writer').split(',')] if data.get('writer') != None else data.get('writer')
+        data['director'] = [field.strip(' ') for field in data.get('director').split(',')] if data.get('director') != None else ''
+        data['writer'] = [field.strip(' ') for field in data.get('writer').split(',')] if data.get('writer') != None else ''
         return data
+
 
     class Meta:
         model = Movie

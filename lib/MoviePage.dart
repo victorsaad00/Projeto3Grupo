@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:projeto3/Movie.dart';
-import 'package:projeto3/SugestionPage.dart';
+import 'package:projeto3/SuggestionPage.dart';
 
 class MoviePage extends StatelessWidget {
   Movie movie;
@@ -22,55 +22,57 @@ class MoviePage extends StatelessWidget {
               child: SizedBox(
                   child: Column(
                 children: <Widget>[
-                  ColumnShape(context, 'Movie Description', movie.description),
+                  ColumnShape(context, 'description', movie.description),
                   Divider(
-                    height: 35,
+                    height: 20,
                   ),
                   ColumnShape(
                       context,
-                      'Genre',
+                      'genres',
                       movie.genre
-                          .toString()
-                          .substring(1, movie.genre.toString().length - 1)),
+                          .reduce((value, element) => value + ', ' + element)),
                   Divider(
-                    height: 35,
-                  ),
-                  ColumnShape(context, 'Director', movie.director),
-                  Divider(
-                    height: 35,
-                  ),
-                  ColumnShape(context, 'Year of Release', movie.year),
-                  Divider(
-                    height: 35,
+                    height: 20,
                   ),
                   ColumnShape(
                       context,
-                      'Actors',
-                      movie.actors
-                          .toString()
-                          .substring(1, movie.actors.toString().length - 1)),
+                      'directors',
+                      movie.director
+                          .reduce((value, element) => value + ', ' + element)),
                   Divider(
-                    height: 35,
+                    height: 20,
                   ),
-                  ColumnShape(context, 'Average Voting', movie.avgVote),
+                  ColumnShape(context, 'release', movie.year),
+                  Divider(
+                    height: 20,
+                  ),
+                  ColumnShape(
+                      context,
+                      'actors',
+                      movie.actors
+                          .reduce((value, element) => value + ', ' + element)),
+                  Divider(
+                    height: 20,
+                  ),
+                  ColumnShape(context, 'average voting', movie.avgVote),
                   SizedBox(
                     width: 50,
-                    height: 50,
+                    height: 20,
                   ),
                   RaisedButton(
                     child: Container(
                       alignment: Alignment.center,
                       child: Text(
-                        'Sugetions',
-                        style: TextStyle(
-                            fontSize: 18, fontWeight: FontWeight.bold),
+                        'suggestion',
+                        style: TextStyle(fontSize: 18),
                       ),
                     ),
                     color: Color(0xFF212121),
                     // Paginar para lista de sugestao
                     onPressed: () => Navigator.of(context).push(
                         MaterialPageRoute(
-                            builder: (_) => SugestionPage(movie.imdbTitleId))),
+                            builder: (_) => SuggestionPage(
+                                movie.imdbTitleId, movie.title))),
                   )
                 ],
               )),
@@ -90,15 +92,17 @@ Widget ColumnShape(context, col_title, col_info) {
       child: Column(
         children: [
           Container(
+            padding: const EdgeInsets.all(4.0),
             alignment: Alignment.centerLeft,
             child: Text(
               col_title,
               textAlign: TextAlign.left,
-              style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
+              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
             ),
           ),
           Container(
-            alignment: Alignment.centerRight,
+            padding: const EdgeInsets.all(4.0),
+            alignment: Alignment.centerLeft,
             decoration: BoxDecoration(),
             child: Text(col_info),
           ),
