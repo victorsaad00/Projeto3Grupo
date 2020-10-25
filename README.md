@@ -3,6 +3,9 @@
 [![Github badge](https://badgen.net/badge/icon/github?icon=github&label)](https://github.com/)
 [![Git badge](https://badgen.net/badge/icon/git?icon=git&label)](https://git-scm.com/downloads)
 [![Vs code badge](https://badgen.net/badge/icon/visualstudio?icon=visualstudio&label)](https://code.visualstudio.com/download)
+[![Python](https://forthebadge.com/images/badges/made-with-python.svg)](https://www.python.org/downloads/)
+[![Django](https://img.shields.io/badge/Python-Django-orange)](https://www.djangoproject.com/download/)
+
 
 
 A new Flutter application.
