@@ -10,7 +10,7 @@
   ### Movie recomendation app
 
 
- **Welcome to our Movie recomendation made with Flutter and Django API**
+ **Welcome to our Movie recomendation app made with Flutter and Django API**
  
   - First you need to install the following:
   - [Python](https://www.python.org/downloads/)
