@@ -17,5 +17,14 @@
   - [Django](https://www.djangoproject.com/download/)
   - [Flutter](https://flutter.dev/)
   - [Android studio](https://developer.android.com/studio?hl=pt-br)
+  
+  
+  ### Made by: 
+|Name|Github page|
+| -------- | -------- |
+|Victor Saad|https://github.com/victorsaad00|
+|Claro Alvino|https://github.com/alvinoc|
+|Iago Filipe|https://github.com/ifest1|
+|Alexandre Maranhão |https://github.com/amaranhao|
 
 
